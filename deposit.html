@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>💰 ডিপোজিট ফর্ম</h2>
+        <form id="depositForm">
+            <label for="name">প্রদানকারীর নাম</label>
+            <input type="text" id="name" required>
+
+            <label for="mobile">মোবাইল নম্বর</label>
+            <input type="tel" id="mobile" required>
+
+            <label for="amount">পরিমাণ (টাকা)</label>
+            <input type="number" id="amount" required>
+
+            <label for="paymentMethod">পেমেন্ট পদ্ধতি</label>
+            <select id="paymentMethod" required>
+                <option value="Cash">নগদ</option>
+                <option value="Bkash">বিকাশ</option>
+                <option value="Rocket">রকেট</option>
+                <option value="Bank Transfer">ব্যাংক ট্রান্সফার</option>
+            </select>
+
+            <label for="transactionId">ট্রান্সেকশন নম্বর</label>
+            <input type="text" id="transactionId">
+
+            <button type="submit">✅ জমা দিন</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
